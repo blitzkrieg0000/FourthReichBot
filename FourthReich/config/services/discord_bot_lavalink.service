@@ -1,0 +1,11 @@
+[Unit]
+Description=Lavalink background task
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'cd /root/FourthReich && sudo java -jar /root/FourthReich/config/lavalink/Lavalink.jar'
+Type=simple
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

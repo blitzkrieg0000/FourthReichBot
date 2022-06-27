@@ -1,0 +1,11 @@
+[Unit]
+Description=Discord Bot
+After=multi-user.target discord_bot_lavalink.service
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/bin/bash -c "cd /root/FourthReich/ && /usr/bin/python3 launcher.py"
+
+[Install]
+WantedBy=multi-user.target
