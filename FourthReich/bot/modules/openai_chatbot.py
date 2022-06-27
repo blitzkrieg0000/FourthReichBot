@@ -1,6 +1,6 @@
 import json
 import openai
-openai.api_key = "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"
+openai.api_key = ""
 
 class openai_Chatbot():
     def __init__(self):
